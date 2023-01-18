@@ -1,0 +1,27 @@
+body {
+    font-family: "ui-monospace", sans-serif;
+    font-size: 1.2rem;
+}
+
+h1, h2 {
+    background: #222222;
+    color: #ffec3a;
+    text-align: center;
+}
+
+a {
+    background: #222222;
+    color: #ffec3a;
+    text-decoration: none;
+}
+
+p,ul {
+    color: #222222;
+    background: #fcd818;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
