@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid #838383;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card p {
+    color: #838383;
+}
+
+.btn {
+    border: solid #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    gap: 10px;
+}
+
+.widgets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    background: cornflowerblue;
+}
+
+.widgets__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+    gap: 10px;
+}
+
+.widgets__items div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2a47b4;
+    height: 100%;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    background: cornflowerblue;
+}
