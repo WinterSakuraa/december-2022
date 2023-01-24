@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+}
+
+.navbar {
+    position: relative;
+    height: 10%;
+    background: #caecf5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.left {
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background: #0a3248;
+}
+
+.right > i {
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+.content-1 {
+    height: 70%;
+    background: #0a3248;
+}
+
+.content-2 {
+    height: 20%;
+    background: #caecf5;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.content-2 .block {
+    width: 100px;
+    height: 100px;
+    background: #5f4dd9;
+    position: absolute;
+    top: -50px;
+    border-radius: 10px;
+}
+
+.l50 {
+    left: 40%;
+}
+
+.r50 {
+    right: 40%;
+}
