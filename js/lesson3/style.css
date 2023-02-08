@@ -1,0 +1,21 @@
+.product-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.product-title {
+    color: #222222;
+    font-family: 'Trocchi', serif;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
