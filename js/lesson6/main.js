@@ -27,8 +27,8 @@ console.log(lorem);
 console.log(js);
 
 // - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
-let str = ' dirty string   ';
-let clean = str.replace(' ', '');
+let str = ' dirty             string   ';
+let clean = str.trim().split(' ').filter((char) => char).join(' ');
 console.log(clean);
 
 // - Напишіть функцію stringToarray(str), яка перетворює рядок на масив слів.
