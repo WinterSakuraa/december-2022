@@ -68,12 +68,13 @@ function Car(model, manufacturer, year, maxSpeed, engineVolume) {
         }
     };
     this.changeYear = (newValue) => {
-        this.year = newValue
+        this.year = newValue;
     };
     this.addDriver = (driver) => {
-        this.driver = driver
-    }
+        this.driver = driver;
+    };
 }
+
 const car = new Car('BMW', 'man', 2019, 100, 200);
 
 // - (Те саме, тільки через клас)
@@ -92,66 +93,72 @@ class CarClass {
         this.engineVolume = engineVolume;
     }
 
-    drive = () => {
+    drive() {
         console.log(`їдемо зі швидкістю ${ this.maxSpeed } на годину`);
     };
-    info = () => {
+
+    info() {
         for (const propName in this) {
             if (!(this[propName] instanceof Function)) {
                 console.log(`${ propName } - ${ this[propName] }`);
             }
         }
     };
-    increaseMaxSpeed = (newSpeed) => {
+
+    increaseMaxSpeed(newSpeed) {
         if (newSpeed > 0) {
             this.maxSpeed = newSpeed;
         }
     };
-    changeYear = (newValue) => {
-        this.year = newValue
+
+    changeYear(newValue) {
+        this.year = newValue;
     };
-    addDriver = (driver) => {
-        this.driver = driver
-    }
+
+    addDriver(driver) {
+        this.driver = driver;
+    };
 }
+
 const carInstance = new CarClass('BMW', 'man', 2019, 100, 200);
 
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
 class Cinderella {
     constructor(name, age, footSize) {
-        this.name = name
-        this.age = age
-        this.footSize = footSize
+        this.name = name;
+        this.age = age;
+        this.footSize = footSize;
     }
 }
 
-const cinderellas = []
+const cinderellas = [];
 for (let i = 0; i < 9; i++) {
-    cinderellas.push(new Cinderella('cinderella', 18, 36))
+    cinderellas.push(new Cinderella('cinderella', 18, 36));
 }
-cinderellas.push(new Cinderella('right cinderella',  18, 35))
+cinderellas.push(new Cinderella('right cinderella', 18, 35));
 console.log(cinderellas);
 
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 class Prince {
     constructor(name, age, shoe) {
-        this.name = name
-        this.age = age
-        this.shoe = shoe
+        this.name = name;
+        this.age = age;
+        this.shoe = shoe;
     }
 }
-const prince = new Prince('prince', 19, 35)
+
+const prince = new Prince('prince', 19, 35);
 console.log(prince);
 
 // За допомоги циклу знайти яка попелюшка повинна бути з принцом.
-let thatOne
+let thatOne;
 for (const cinderella of cinderellas) {
-    if (prince.shoe === cinderella.footSize){
-        thatOne = cinderella
+    if (prince.shoe === cinderella.footSize) {
+        thatOne = cinderella;
     }
 }
 console.log(thatOne);
 
 // Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
-const thatOneWithFind = cinderellas.find((cinderella) => cinderella.footSize === prince.shoe)
+const thatOneWithFind = cinderellas.find((cinderella) => cinderella.footSize === prince.shoe);
 console.log(thatOneWithFind);
